@@ -497,6 +497,7 @@ lm_fe_6 <- plm(pct_covered_any_pct_pt_change ~ lag_pct_covered_any + pct_medicai
 
 table_1 <- stargazer(lm_fe_1, lm_fe_2, lm_fe_3, lm_fe_4, lm_fe_5, lm_fe_6, 
                      digits = 3, header = FALSE, type = 'latex', model.numbers = FALSE,
+                     column.sep.width = '-15pt', omit.stat = 'f',
                      column.labels = c("(1)", "(2)", "(3)", "(4)", "(5)", "(6)"))
 
 # Display figures:
