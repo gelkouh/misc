@@ -331,7 +331,7 @@ figure_14 <- ggplot(filter(df_other_count_year, healthcare_other == 1), aes(x=ye
   ggtitle('Figure 14. Non-Medicare/-Medicade ("Other") coverage')
 
 ##-----##
-# Table 1. (creating panel dataframe for fixed effects regression, regressions, and regression table)
+# Table 1. (code for panel dataframe for fixed effects regressions and regression table)
 ##-----##
 
 df_non_white <- df_full %>%
