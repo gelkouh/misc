@@ -235,6 +235,7 @@ figure_8 <- ggplot(df_race_white, aes(year, frac_covered)) +
   geom_line(col = 'blue') +
   xlab('Year') +
   ylab('% of white individuals insured') +
+  scale_x_continuous(breaks= pretty_breaks()) +
   ggtitle('Figure 8. White coverage')
 
 ##-----##
@@ -254,6 +255,7 @@ figure_9 <- ggplot(df_race_nonwhite, aes(year, frac_covered)) +
   geom_line(col = 'blue') +
   xlab('Year') +
   ylab('% of nonwhite individuals insured') +
+  scale_x_continuous(breaks= pretty_breaks()) +
   ggtitle('Figure 9. Nonwhite coverage')
 
 ##-----##
