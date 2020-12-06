@@ -485,7 +485,7 @@ lm_fe_1 <- plm(pct_covered_any_pct_pt_change ~ lag_pct_covered_any,
 lm_fe_2 <- plm(pct_covered_any_pct_pt_change ~ lag_pct_covered_any + pct_medicaid_of_any + pct_medicare_of_any,
                data = pdata_lm_fe, model = "within",effect = "twoways")
 lm_fe_3 <- plm(pct_covered_any_pct_pt_change ~ lag_pct_covered_any + pct_medicaid_of_any + 
-                 pct_inc_below_20k + lag_pct_inc_below_20k + lag_avg_inc,
+                 pct_inc_below_20k + lag_avg_inc,
                data = pdata_lm_fe, model = "within",effect = "twoways")
 lm_fe_4 <- plm(pct_covered_any_pct_pt_change ~ lag_pct_covered_any + pct_medicare_of_any + pct_65,
                data = pdata_lm_fe, model = "within",effect = "twoways")
