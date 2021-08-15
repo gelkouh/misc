@@ -1,2 +1,2 @@
 # misc
-Miscellaneous files and code samples
+Miscellaneous files and code
